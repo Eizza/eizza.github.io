@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<meta property="og:image" content="img/5.jpg">
+	<!-- <meta property="og:title" content="Аманжол & Мадина"> -->
+	<!-- <title>Үйлену тойына шақыру!</title> -->
+
+	<meta name="description" content="С радостью приглашаем вас разделить с нами самый важный день нашей жизни. 15 июня 2026 года. Алматы.">
+	<meta property="og:title" content="Айжан & Дамир — Приглашение на свадьбу">
+	<meta property="og:description" content="Будем счастливы видеть вас 15 июня 2026 года.">
+	<meta property="og:image" content="img/5.jpg">
+
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<audio id="music" src="audio/ramadan.mp3" autoplay loop></audio>
+	<button id="btn" class="btn"><img id="btnimg" src="img/play.png" alt=""></button>
+
+	<div class="doors">
+		<img src="img/open_2.png"  class="open_2" alt="">
+		<img src="img/open_1.png"  class="open_1" alt="">
+	</div>
+
+	<div class="con1">
+
+		<img class="img_rot" style="left: 50%; top:-70px; width: 500px;" src="img/ornament_1.png" alt="">
+		
+		<div class="name">
+			<div class="mr40"></div>
+			<div class="mr20"></div>
+			<div class="linegr"><img src="img/swan_b.png" alt=""></div>
+			<p>Қасиетті Рамазан</p>
+		</div>
+		<img class="img1" src="img/5_.jpg" alt="">
+	</div>
+	<div class="con2">
+
+		<img class="img_rot" style="left:0; top: 300px; width: 300px;" src="img/ornament_1.png" alt="">
+		
+		<div class="linegr"><img src="img/swan_b.png" alt=""></div>
+		<!-- <div class="mr5"></div> -->
+
+
+		<img class="ico" src="img/tg.png" alt="">
+		<h1>Құрметті мұсылман бауырлар!</h1>
+
+
+		<h1>Сіздерді қасиетті </h1>
+		<div class="mr5"></div>
+		<p>Рамазан</p>
+		<div class="mr5"></div>
+		<h1>айында ұйымдастырылатын ауызашар дастарханымыздың қадірлі қонағы болуға шақырамыз!</h1>
+		<h1>Берекелі айда бірге бас қосып, ақ дастарханнан дәм татып, жақсылық пен мейірімге толы кештің куәсі болайық.</h1>
+
+		<div class="mr5"></div>
+
+		<h1>Құрметпен</h1>
+		<p>Назима</p>
+
+
+		<div class="mr5"></div>
+		<div class="linegr"><img src="img/swan_b.png" alt=""></div>
+
+	</div>
+
+	<div class="con3">
+		<img class="img_rot" style="left: 100%; top: -500px; width: 400px;" src="img/ornament_1.png" alt="">
+		<div class="box">
+			<img src="img/3_1.jpg" alt="">
+		</div>
+
+
+
+		<div class="mr5"></div>
+
+		<h1>17.03.2026 | 18:00</h1>
+		<h1>мекен жайымыз:</h1>
+		<h1>ул. Төле би, 24Б</h1>
+		<h1>"Maui"</h1>
+
+		<div class="mr5"></div>
+		<h1 class="button">
+
+			<a href="https://2gis.kz/almaty/firm/70000001057412615/77.30496%2C43.368513">
+			<img class="tugis" src="img/tugis.png" alt="">
+			Картаны ашу
+			</a>
+		</h1>
+	</div>
+
+	<!-- -----------------timer------------------ -->
+	<section class="countdown-wrap" aria-label="Countdown timer">
+		<h1 class="black" style="font-family: Myfont2;">Ифтарға дейін</h1>
+		<div class="mr5"></div>
+
+	  <div class="countdown" role="timer" aria-live="polite">
+	    <div class="cd-box">
+	      <div class="cd-num" id="cd-days">00</div>
+	      <div class="cd-lbl">күн</div>
+	    </div>
+
+	    <div class="cd-sep">:</div>
+
+	    <div class="cd-box">
+	      <div class="cd-num" id="cd-hours">00</div>
+	      <div class="cd-lbl">сағат</div>
+	    </div>
+
+	    <div class="cd-sep">:</div>
+
+	    <div class="cd-box">
+	      <div class="cd-num" id="cd-mins">00</div>
+	      <div class="cd-lbl">мин</div>
+	    </div>
+
+	    <div class="cd-sep">:</div>
+
+	    <div class="cd-box">
+	      <div class="cd-num" id="cd-secs">00</div>
+	      <div class="cd-lbl">сек</div>
+	    </div>
+	  </div>
+
+	</section>
+
+	<!-- ----------------------------------- -->
+
+
+
+	<!-- <div class="mr5"></div> -->
+	<div class="linegr"><img src="img/swan_b.png" alt=""></div>
+
+	<div class="con5">
+		<h2>Сауалнама</h2>
+		<h1>Тойға қатысатыныңызды растауыңызды сұраймыз.</h1>
+		<h1>Аты-жөніңізді жазыңыз (егер жұбайыңызбен келетін болсаңыз, екеуіңіздің де аты-жөніңізді көрсетуіңізді өтінеміз)</h1>
+	</div>
+
+	<div class="mr5"></div>
+	<form  id="rsvpForm" onsubmit="event.preventDefault(); sendData();">
+
+	  <input type="text" id="name" placeholder="Аты-жөні" required>
+
+	  <div class="rsvp-options">
+	    <label class="radio-item">
+		  <input type="radio" name="attendance" value="Келемін" required>
+		  <span class="custom-radio"></span>
+		  <span class="radio-text">Келемін</span>
+		</label>
+
+		<label class="radio-item">
+		  <input type="radio" name="attendance" value="Жұбайыммен келемін">
+		  <span class="custom-radio"></span>
+		  <span class="radio-text">Жұбайыммен келемін</span>
+		</label>
+
+		<label class="radio-item">
+		  <input type="radio" name="attendance" value="Келе алмаймын">
+		  <span class="custom-radio"></span>
+		  <span class="radio-text">Келе алмаймын</span>
+		</label>
+
+	  </div>
+
+	  <button type="submit">Отправить</button>
+
+	</form>
+
+	<div class="linegr"><img src="img/swan_b.png" alt=""></div>
+
+	<div class="con4">
+		<div class="mr5"></div>	
+		<a href="https://www.instagram.com/bonbonier.ala"><img src="img/instagram.png" alt="">bonbonier.ala</a>
+		<a href="https://wa.me/77066003399"><img src="img/wp.png" alt="">+7 706 600 3399</a>
+		<div class="mr5"></div>	
+	</div>
+
+
+	<script src="frame/jquery-3.3.1.min.js"></script>
+	<script src="frame/TweenMax.min.js"></script>
+	<script src="script.js"></script>
+
+</body>
+</html>
