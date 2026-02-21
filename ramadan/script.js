@@ -1,13 +1,15 @@
 window.onload = function(){
 
-    TweenMax.to($('.open_1'), 2, {
-      x: 400,
-      ease: Linear.easeNone
-    });
-    TweenMax.to($('.open_2'), 2, {
-      x: -400,
-      ease: Linear.easeNone
-    });
+    setTimeout(function() {
+      TweenMax.to($('.open_1'), 2, {
+        x: 400,
+        ease: Linear.easeNone
+      });
+      TweenMax.to($('.open_2'), 2, {
+        x: -400,
+        ease: Linear.easeNone
+      });
+    }, 500);
 
     
 
@@ -67,7 +69,7 @@ window.onload = function(){
   // 🔹 запуск при загрузке
   setTimeout(function () {
     revealVisible();
-  }, 1000);
+  }, 2000);
 
   // 🔹 при скролле показываем остальные
   $(window).on("scroll", function () {
