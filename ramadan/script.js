@@ -1,6 +1,6 @@
 window.onload = function(){
-
     setTimeout(function() {
+      $('html, body').scrollTop(0);
       TweenMax.to($('.open_1'), 2, {
         x: 400,
         ease: Linear.easeNone
@@ -9,11 +9,17 @@ window.onload = function(){
         x: -400,
         ease: Linear.easeNone
       });
+
+      setTimeout(function(){
+        $('.doors').css({
+          display: "none"
+        });
+      },2500);
+
     }, 500);
 
-    
-
     $("#btn").click(function(){
+      console.log('asd')
         if (music.paused) {
     music.play();
     music.volume = 0;
